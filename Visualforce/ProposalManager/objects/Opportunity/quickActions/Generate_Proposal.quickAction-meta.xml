@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Generate Proposal</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>VisualforcePage</type>
+    <page>ProposalPDF</page>
+    <height>600</height>
+    <width>800</width>
+</QuickAction>
