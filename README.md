@@ -1,19 +1,31 @@
-# salesforce-development
-# Salesforce DX Project: Next Steps
+# Salesforce Development
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+Welcome to my Salesforce development repository. This project is organized by metadata type to demonstrate a clear separation between Classic and Modern Salesforce development.
 
-## How Do You Plan to Deploy Your Changes?
+---
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+## 📂 Repository Map
 
-## Configure Your Salesforce DX Project
+Below is a guide to help you navigate the codebase:
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+### 1. [Visualforce](./Visualforce/ProposalManager)
+Contains the **Proposal Manager** feature. 
+* **Use Case:** Custom PDF generation from Opportunity records.
+* **Key Files:** `ProposalPDF.page` and `ProposalExtension.cls`.
 
-## Read All About It
+### 2. [Aura Components](./Aura)
+A collection of components built using the original Lightning Component Framework.
+* **Focus:** Classic Lightning UI/UX and event-driven architecture.
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+### 3. [LWC (Lightning Web Components)](./LWC)
+Modern, standards-based components built using the latest Salesforce framework.
+* **Focus:** High performance, ES6+ JavaScript, and modern web standards.
+
+---
+
+## 🛠️ Setup & Usage
+This repository follows a flattened SFDX structure. To use this in your own environment:
+1. Clone the repository.
+2. Review the `sfdx-project.json` in the root to see the package directory mappings.
+3. Deploy specific folders using:
+   `sf project deploy start --source-dir Visualforce/ProposalManager`
