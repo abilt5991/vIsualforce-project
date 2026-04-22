@@ -27,11 +27,11 @@ Here is a visual guide of the Proposal Manager feature in action:
 
 #### Generate Proposal Quick Action
 Users can trigger the process directly from any Opportunity record.
-![Quick Action screenshot](images/generate_proposal.png)
+
 
 #### Generated Proposal PDF (Example)
 The end result is a polished, professional PDF.
-![PDF Example screenshot](images/proposal_savePDF.png)
+
 
 
 ---
